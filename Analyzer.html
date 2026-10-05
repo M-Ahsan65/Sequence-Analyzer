@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DNA Sequence Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🧬 DNA Sequence Analyzer</h1>
+
+        <p>Enter a DNA sequence to analyze it.</p>
+
+        <textarea
+            id="dnaSequence"
+            placeholder="Example: ATGCGTACCGTAGCTAGC">
+        </textarea>
+
+        <button onclick="analyzeDNA()">Analyze DNA</button>
+
+        <div class="results">
+
+            <div class="result">
+                <h3>Sequence Length</h3>
+                <p id="length">-</p>
+            </div>
+
+            <div class="result">
+                <h3>Adenine (A)</h3>
+                <p id="adenine">-</p>
+            </div>
+
+            <div class="result">
+                <h3>Thymine (T)</h3>
+                <p id="thymine">-</p>
+            </div>
+
+            <div class="result">
+                <h3>Guanine (G)</h3>
+                <p id="guanine">-</p>
+            </div>
+
+            <div class="result">
+                <h3>Cytosine (C)</h3>
+                <p id="cytosine">-</p>
+            </div>
+
+            <div class="result">
+                <h3>GC Content</h3>
+                <p id="gcContent">-</p>
+            </div>
+
+            <div class="result">
+                <h3>AT Content</h3>
+                <p id="atContent">-</p>
+            </div>
+
+        </div>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
